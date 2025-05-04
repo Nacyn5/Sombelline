@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  background-color: black; /* Optionnel : fond général noir */
+}
+
+.webtoon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+}
+
+.image-frame {
+  padding: 40px 0; /* Bordures haut et bas */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-frame img {
+  height: 1000px;
+  max-height: calc(100vh - 80px); /* 100vh - padding total haut/bas */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
